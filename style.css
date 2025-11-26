@@ -1,0 +1,262 @@
+/* --- Global Styles --- */
+html {
+    scroll-behavior: smooth; /* This makes the scrolling smooth! */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* BACKGROUND IMAGE: Bohol Attraction (Darkened for text readability) */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://static1.detourista.com/wp/wp-content/uploads/Unorganized/Bohol-Attractions-Featured-Image-1200x628.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 15px 0;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* --- Hero Section --- */
+.hero {
+    /* HERO IMAGE: Cebu Attraction */
+    background-image: url('https://static1.detourista.com/wp/wp-content/uploads/Unorganized/Cebu-Attractions-Featured-Image-1200x628.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: 90%;
+}
+
+.hero-content h1 {
+    white-space: nowrap;
+    font-size: clamp(1.2rem, 3.5vw, 3rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #00d2d3;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px black;
+}
+
+.scroll-btn {
+    background-color: #00d2d3;
+    color: #222;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.2s;
+}
+
+.scroll-btn:hover {
+    transform: scale(1.1); /* Effect: Button gets bigger */
+    background-color: white;
+}
+
+/* --- Main Grid Layout --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+/* --- Card Styles --- */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s; /* Effect: Smooth movement */
+}
+
+/* Effect: Card lifts up when you hover */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.expanded {
+    grid-column: 1 / -1;
+}
+
+.card-header {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    z-index: 1;
+}
+
+.header-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.card-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.card-header button {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.card-header button:hover {
+    background: white;
+    color: #333;
+}
+
+/* --- Content Styles --- */
+.card-content {
+    display: none;
+    padding: 30px;
+    border-top: 5px solid #00d2d3;
+}
+
+.card-content.show {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+/* --- IMAGE FIX --- */
+.journal-img {
+    display: block;
+    margin: 15px auto;
+    
+    /* This makes sure the picture is never cut */
+    width: auto; 
+    max-width: 100%;
+    
+    /* This limits height so tall portrait photos don't fill the whole screen */
+    max-height: 450px; 
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+    /* Cool Effect: Smooth transition for zoom */
+    transition: transform 0.3s ease;
+}
+
+/* Effect: Zoom in when hovering over image */
+.journal-img:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.gallery-grid .journal-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover; /* Gallery items can be cropped to look neat */
+}
+
+.close-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.close-btn:hover {
+    background-color: #555;
+}
+
+/* --- Reflection Section --- */
+.reflection-section {
+    grid-column: 1 / -1;
+    background: rgba(44, 62, 80, 0.9);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; }
+    .hero-content h1 { white-space: normal; font-size: 2rem; }
+}

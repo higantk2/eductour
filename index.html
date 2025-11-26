@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Tour Journal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>EDUCATIONAL TOUR CEBU-BOHOL</h1>
+                <p>A 4-Day Immersive Journey of Technical Learning, Historical Discovery, and Cultural Experience.</p>
+                <a href="#main-content" class="scroll-btn">View Journal</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" id="main-content">
+        
+        <div class="card" id="day1">
+            <div class="card-header" style="background-image: url('images/day1-1.jpg');">
+                <div class="header-overlay"></div>
+                <div class="header-text">
+                    <h2>Day 1: Cebu City</h2>
+                    <span class="subtitle">Arrival & WorldTech</span>
+                </div>
+                <button onclick="toggleDay('day1')">View Entry</button>
+            </div>
+            <div class="card-content">
+                <p class="summary-text"><strong>Highlight:</strong> Visit to WorldTech Information Solutions Inc., a premier IT consultancy.</p>
+                <article>
+                    <h3>Hello, Cebu City!</h3>
+                    <p>We all met early at the Davao Airport for our big trip to Cebu!</p>
+                    <img src="images/day1-1.jpg" alt="Airport Assembly" class="journal-img">
+
+                    <h4>Learning at Lapu-Lapu</h4>
+                    <p>The Mactan Shrine in Lapu-Lapu City, Cebu was established in 1969 as national shrine through Republic Act No. 5695 during the administration of President Ferdinand Marcos. The site is believed to be the approximate location of the historic Battle of Mactan which saw the defeat of the Spaniards led by explorer Ferdinand Magellan against Lapu-Lapu the datu of Mactan and his forces. The legislation included the Magellan Monument a structure which was erected back in the Spanish colonial era in 1866. Republic Act No. 5695 also mandated for a monument for Lapu Lapu, who is regarded as hero for his role in the historic battle in 1521 as well as the erection of a Liberty House, a facility which would exhibit memorabilia showcasing the Philippines' history prior to the arrival of the Spanish. In 1981, a bronze statue depicting Lapu-Lapu was erected within the shrine.</p>
+                    <img src="images/day1-2.jpg" alt="Mactan Shrine" class="journal-img">
+
+                    <h4>Lunch at SM Seaside</h4>
+                    <p>We enjoyed a Korean lunch at Somac Korean Restaurant also First and the biggest Korean buffet in Cebu! With more than 100 kinds of authentic Korean dishes.</p>
+                    <img src="images/day1-3.jpg" alt="Lunch at Somac" class="journal-img">
+
+                    <h4>Industry Visit: WORLDTECH</h4>
+                    <p>Worldtech Information Solutions Inc. is an IT consultancy company and certification training center base in the Asia Pacific Region (Philippines, Australia and Singapore). We are built with a strong relation with offshore clients and highly skilled consultants.</p>
+                    <img src="images/day1-4.jpg" alt="WorldTech Visit" class="journal-img">
+
+                    <h4>Accommodation</h4>
+                    <p>Nestled between the bustling cities of Mandaue and Cebu, bai Hotel Cebu presents spectacular harbor and city views with ultra-modern amenities and facilities. A contemporary chic business hotel and culinary destination in one of the country’s top business and leisure destinations. All 668 guestrooms and 8 restaurants are stylishly designed in contemporary hues that evoke an ambiance of modern luxury and spaciousness secured with a world-class access control system.</p>
+                    <img src="images/day1-5.webp" alt="Bai Hotel" class="journal-img">
+                </article>
+                <button class="close-btn" onclick="toggleDay('day1')">Close Entry</button>
+            </div>
+        </div>
+
+        <div class="card" id="day2">
+            <div class="card-header" style="background-image: url('images/day2-2.jpg');">
+                <div class="header-overlay"></div>
+                <div class="header-text">
+                    <h2>Day 2: Tech & Heritage</h2>
+                    <span class="subtitle">Code Chum & Rivan IT</span>
+                </div>
+                <button onclick="toggleDay('day2')">View Entry</button>
+            </div>
+            <div class="card-content">
+                <p class="summary-text"><strong>Highlight:</strong> Meeting the CPO of Code Chum and exploring network infrastructure.</p>
+                <article>
+                    <h3>IT Learning and City Sights</h3>
+                    <p>We started our day with a substantial buffet breakfast at Bai Hotel and Authentic flavors and recipes await at bai Hotel Cebu's finest restaurant and bars. Indulge in a completely delightful dining experience that's sure to deliver an exceptional culinary adventure.</p>
+                    <img src="images/day2-1.webp" alt="Breakfast" class="journal-img">
+
+                    <h4>Meeting Code Chum</h4>
+                    <p>We had the privilege of meeting Sir Xavier David Maranga, CPO at Code Chum.</p>
+                    <img src="images/day2-2.jpg" alt="Code Chum Visit" class="journal-img">
+
+                    <h4>Lunch and Networking Insight</h4>
+                    <p>After lunch at Buffet 101, we visited Rivan IT Cebu to learn about networking.</p>
+                    <img src="images/day2-4.jpg" alt="Rivan IT" class="journal-img">
+
+                    <h4>History and Culture</h4>
+                    <p>The Basílica Minore del Santo Niño de Cebú, alternatively known as the Minor Basilica of the Holy Child or simply Santo Niño Basilica, is a minor basilica in Cebu City in the Philippines that was founded in 1565 by Fray Andrés de Urdaneta and Fray Diego de Herrera. It is the oldest church in the country, allegedly built on the spot where the image of the Santo Niño de Cebú was found during the expedition of Miguel López de Legazpi.</p>
+                    <img src="images/day2-5.jpg" alt="Basilica Minore" class="journal-img">
+                    <p>We concluded the day visiting a famous local clothing line.</p>
+                    <img src="images/day2-6.jpg" alt="Cebu Shopping" class="journal-img">
+                </article>
+                <button class="close-btn" onclick="toggleDay('day2')">Close Entry</button>
+            </div>
+        </div>
+
+        <div class="card" id="day3">
+            <div class="card-header" style="background-image: url('images/day3-1.jpg');">
+                <div class="header-overlay"></div>
+                <div class="header-text">
+                    <h2>Day 3: Cebu to Bohol</h2>
+                    <span class="subtitle">Mata Tech & Island Transfer</span>
+                </div>
+                <button onclick="toggleDay('day3')">View Entry</button>
+            </div>
+            <div class="card-content">
+                <p class="summary-text"><strong>Highlight:</strong> Virtual Reality insights and crossing the sea to Bohol.</p>
+                <article>
+                    <h3>Crossing to Bohol</h3>
+                    <p>Enjoyed another premium breakfast at Bai Hotel before checking out.</p>
+                    
+                    <h4>Innovation at Mata Technologies</h4>
+                    <p>People Behind Mata Mata Technologies Inc. is a homegrown provider of virtual tours for real estate in the Philippines. It is also the virtual reality map provider of tourist destinations in the country. Deriving its name from the Filipino word “mata,” which means eyes, Mata Tech aims to give you a 360° preview of real estate properties and notable destinations.</p>
+                    <img src="images/day3-1.jpg" alt="Mata Tech" class="journal-img">
+
+                    <h4>Departure</h4>
+                    <p>We had lunch at Vikings SM City and bought pasalubong.</p>
+                    <img src="images/day3-2.webp" alt="Vikings Lunch" class="journal-img">
+                    <p>We took the SuperCat ferry from Pier 2 to Tagbilaran City.</p>
+                    <img src="images/day3-3.jpg" alt="Ferry Ride" class="journal-img">
+
+                    <h4>Arrival in Bohol</h4>
+                    <p>Make unforgettable memories exploring the best of Bohol, from its stunning natural wonders to its world-famous spots. After a day of island adventures, come home to comfort and relaxation at Panglao Vista Suites by SMS Hospitality.Panglao Beach is a collection of pristine white-sand beaches on Panglao Island, Bohol, Philippines, known for its clear waters, vibrant coral reefs, and various water activities. Key beaches include the popular and active Alona Beach, and the quieter Dumaluan and Momo beaches, all offering relaxing, scenic, and active vacation opportunities with amenities like restaurants and dive shops.</p>
+                    <img src="images/day3-4.jpg" alt="Vista Suite" class="journal-img">
+                    <img src="images/day3-5.jpg" alt="Panglao Beach" class="journal-img">
+                </article>
+                <button class="close-btn" onclick="toggleDay('day3')">Close Entry</button>
+            </div>
+        </div>
+
+        <div class="card" id="day4">
+            <div class="card-header" style="background-image: url('images/day4-4.jpg');">
+                <div class="header-overlay"></div>
+                <div class="header-text">
+                    <h2>Day 4: Wonders of Bohol</h2>
+                    <span class="subtitle">Nature, Heritage & Departure</span>
+                </div>
+                <button onclick="toggleDay('day4')">View Entry</button>
+            </div>
+            <div class="card-content">
+                <p class="summary-text"><strong>Highlight:</strong> The Chocolate Hills, Tarsier Sanctuary, and Loboc River.</p>
+                <article>
+                    <h3>Exploring Bohol</h3>
+                    <p>We started with a visit to the local 911 center.</p>
+
+                    <h4>Loboc River Cruise</h4>
+                    <p>The Loboc River is a scenic river in Bohol, Philippines, known for its emerald green waters flowing through lush jungle scenery. It is a popular tourist destination offering unique experiences like floating restaurants, cultural performances, and water activities</p>
+                    <img src="images/day4-1.jpg" alt="Loboc River" class="journal-img">
+
+                    <h4>Baclayon Church</h4>
+                    <p>Baclayon Church, officially the Immaculate Conception Parish Church, is one of the oldest stone churches in the Philippines, constructed with coral stones and egg whites as cement between 1717 and 1727. Founded by Jesuit priests in 1596, it was the site of the first Jesuit mission in Bohol, featuring a separate bell tower completed later in 1777. The church is a historic landmark, with the exterior walls bearing the Jesuit insignia and the original structure still largely intact.</p>
+                    <img src="images/day4-2.jpg" alt="Baclayon Church" class="journal-img">
+
+                    <h4>Chocolate Hills</h4>
+                    <p>Chocolate Hills in Bohol Island: Everything You Need to Know ...The Chocolate Hills are a unique geological formation in Bohol, Philippines, consisting of around 1,776 cone-shaped hills spread over an area of more than 50 square kilometers. Covered in grass, the hills turn a distinctive chocolate-brown color during the dry season, which is how they got their name. These hills are believed to be formations of weathered limestone, raised above sea level and then sculpted by erosion over millions of years.</p>
+                    <img src="images/day4-3.jpg" alt="Chocolate Hills" class="journal-img">
+
+                    <h4>Man-Made Forest & Tarsiers</h4>
+                    <p>The Bohol man-made forest, also known as the Bilar Man-Made Forest, was created starting in 1968 as a reforestation project to combat deforestation caused by logging and agricultural expansion. The two-kilometer stretch of densely planted mahogany trees, located between the towns of Loboc and Bilar, was a collaborative effort between the government and the local community. It is a symbol of successful reforestation and has become a popular tourist attraction.The Philippine Tarsier is a small, nocturnal primate found in Bohol, known for its enormous eyes, which are larger than its brain, and its ability to rotate its head nearly 180 degrees. It measures about 3.3 to 6.3 inches long, weighs between 80 and 160 grams, and has a long, thin tail that is often longer than its body. These shy creatures are difficult to spot because their soft, furry bodies blend with their surroundings, and they are sensitive to noise and light, especially during the day when they sleep.</p>
+                    <img src="images/day4-4.jpg" alt="Man Made Forest" class="journal-img">
+                    
+                    <p>We also visited South Farm.</p>
+                    <img src="images/day4-5.jpg" alt="South Farm" class="journal-img">
+
+                    <h4>Homeward Bound</h4>
+                    <p>We flew from Bohol to Manila, and then back to Davao.</p>
+                    <div class="gallery-grid">
+                        <img src="images/day4-6.jpg" alt="Flight 1" class="journal-img">
+                        <img src="images/day4-7.jpg" alt="Flight 2" class="journal-img">
+                    </div>
+                </article>
+                <button class="close-btn" onclick="toggleDay('day4')">Close Entry</button>
+            </div>
+        </div>
+
+        <div class="reflection-section">
+            <h2>Realizations</h2>
+            <div class="reflection-content">
+                <p>This educational tour bridged the gap between classroom theory and real-world application. Witnessing the operations at <strong>WorldTech</strong> and <strong>Rivan IT</strong> highlighted the vast potential within the cybersecurity and networking sectors.</p>
+                <p>As the team at Code Chum shared, technology offers a <em>"new perspective"</em>. Beyond the technical skills, the immersion in Bohol’s rich history and nature provided a necessary balance.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
